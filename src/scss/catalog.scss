@@ -1,0 +1,37 @@
+.cars-catalog {
+	// .cars-catalog__container
+	&__container {
+	}
+	// .cars-catalog__header
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		@include adaptiveValue("padding-top", 50, 30);
+		@media (max-width: $mobile){
+			flex-direction: column;
+			@include adaptiveValue("padding-bottom", 30, 20);
+		}
+	}
+	// .cars-catalog__title
+	&__title {
+	}
+	// .cars-catalog__more
+	&__more {
+	}
+	// .cars-catalog__body
+	&__body {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: rem(2);
+		@include adaptiveValue("padding-bottom", 90, 30);
+		@media (max-width: $mobile){
+			grid-template-columns: 1fr;
+		}
+	}
+}
+.button {
+	// .button_black
+	&_black {
+	}
+}

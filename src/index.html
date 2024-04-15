@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Cars Classic Autotrader"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page_home">
+			<section class="page__cars cars">
+				<div class="cars__container">
+					<div class="cars__body body-cars">
+						<h1 class="body-cars__title">Retro cars 1960-1970</h1>
+						<div class="body-cars__subtitle">
+							<div class="body-cars__label">Vintage retro cars USA</div>
+							<div class="body-cars__button button button_black _icon-arrow">Find a car</div>
+						</div>
+						<div class="body-cars__cards cards-cars">
+							<div class="cards-cars__item">
+								<div class="cars-card">
+									<div class="cars-card__body">
+										<div class="cars-card__price">$39 000</div>
+										<div class="cars-card__name">1967 Toyota 2000GT</div>
+										<div class="cars-card__buttons">
+											<a href="car.html" class="cars-card__button button _icon-arrow">Rent</a>
+											<div class="cars-card__button button button_border">14, 900 miles</div>
+										</div>
+									</div>
+									<div class="cars-card__image -ibg">
+										<img src="img/pages/cars/01.jpeg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="cards-cars__item">
+								<div class="cars-card">
+									<div class="cars-card__body">
+										<div class="cars-card__price">$66 700</div>
+										<div class="cars-card__name">1967 Toyota 2000GT</div>
+										<div class="cars-card__buttons">
+											<div class="cars-card__button button _icon-arrow">Rent</div>
+											<div class="cars-card__button button button_border">14, 900 miles</div>
+										</div>
+									</div>
+									<div class="cars-card__image -ibg">
+										<img src="img/pages/cars/02.jpeg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="cards-cars__item">
+								<div class="cars-card">
+									<div class="cars-card__body">
+										<div class="cars-card__price">$39 000</div>
+										<div class="cars-card__name">1967 Toyota 2000GT</div>
+										<div class="cars-card__buttons">
+											<div class="cars-card__button button _icon-arrow">Rent</div>
+											<div class="cars-card__button button button_border">14, 900 miles</div>
+										</div>
+									</div>
+									<div class="cars-card__image -ibg">
+										<img src="img/pages/cars/03.jpeg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="cards-cars__item">
+								<div class="cars-card">
+									<div class="cars-card__body">
+										<div class="cars-card__price">$66 700</div>
+										<div class="cars-card__name">1967 Toyota 2000GT</div>
+										<div class="cars-card__buttons">
+											<div class="cars-card__button button _icon-arrow">Rent</div>
+											<div class="cars-card__button button button_border">14, 900 miles</div>
+										</div>
+									</div>
+									<div class="cars-card__image -ibg">
+										<img src="img/pages/cars/04.jpeg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="cards-cars__item">
+								<div class="cars-card">
+									<div class="cars-card__body">
+										<div class="cars-card__price">$39 000</div>
+										<div class="cars-card__name">1967 Toyota 2000GT</div>
+										<div class="cars-card__buttons">
+											<div class="cars-card__button button _icon-arrow">Rent</div>
+											<div class="cars-card__button button button_border">14, 900 miles</div>
+										</div>
+									</div>
+									<div class="cars-card__image -ibg">
+										<img src="img/pages/cars/05.jpeg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="cards-cars__item">
+								<div class="cars-card cars-card_grey">
+									<div class="cars-card__body">
+										<div class="cars-card__buttons">
+											<div class="cars-card__button button _icon-arrow">All cars</div>
+											<div class="cars-card__button button button_border">29 more cars</div>
+										</div>
+									</div>
+									<div class="cars-card__image -ibg">
+										<img src="img/pages/cars/06.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__about about">
+				<div class="about__container">
+					<div class="about__body body-about">
+						<div class="body-about__label">
+							<h1 class="body-about__title title">About us in numbers</h1>
+							<div class="body-about__text">
+								From acquisition to restoration, we specialize in iconic automobiles, ensuring each
+								drive is a celebration of timeless style. Elevate your journey with our passion
+								for preserving automotive heritage"
+							</div>
+						</div>
+						@@include('html/_about.htm',{
+						})
+			</section>
+			<section class="page__services services">
+				@@include('html/_services.htm',{
+				"title":"Services",
+				"moretext":"Submit your application"
+				})
+			</section>
+			<section class="page__faq faq">
+				@@include('html/_fag.htm',{
+				"title":"Faq",
+				"moretext":"Ask a Question"
+				})
+			</section>
+			<section class="page__find-us find-us">
+				@@include('html/_contacts.htm',{
+				"title":"Where to find us"
+				})
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

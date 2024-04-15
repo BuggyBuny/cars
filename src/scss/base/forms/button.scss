@@ -1,0 +1,97 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	display: inline-block;
+	font-weight: 500;
+	@include adaptiveValue("font-size", 14, 12);
+	line-height: math.div(17, 14);
+	text-align: center;
+	color: $mainColor;
+	padding: rem(13) 0;
+	background: #fff;
+	border-radius: rem(100);
+	@include adaptiveValue("width", 157, 120);
+	@include adaptiveValue("height", 44, 30);
+	align-items: center;
+	// padding-top: rem(13);
+	transition: all 0.3s ease 0s;
+	@media (any-hover: hover) {
+		&:hover {
+			color: #fff;
+			background: $mainColor;
+			// border: 1px solid #fff;
+			box-shadow: 0px 4px 20px rgba(232, 170, 49, 0.63);
+		}
+	}
+	@media (max-width: $mobile){
+		color: #fff;
+		background: $mainColor;
+		width: 100%;
+	}
+	&_border {
+		font-weight: 300;
+		@include adaptiveValue("font-size", 16, 12);
+		background-color: inherit;
+		border: 1px solid #fff;
+		color: #fff;
+		box-shadow: none;
+		// padding-top: rem(13);
+		@include adaptiveValue("padding-top", 13, 8);
+		@media (max-width: $mobile){
+			color: $mainColor;
+			border: 1px solid $mainColor;
+			width: rem(157);
+		}
+		&_b{
+			border: 1px solid $mainColor;
+			color: $mainColor;
+			background-color: inherit;
+		}
+	}
+	&_black {
+		font-weight: 300;
+		font-size: rem(16);
+		background-color: inherit;
+		border: 1px solid $mainColor;
+		color: $mainColor;
+		box-shadow: none;
+		// padding-top: rem(13);
+		@media (max-width: $mobile){
+			color: #fff;
+			background: $mainColor;
+			width: 100%;
+		}
+	}
+	&_fullblack {
+		font-weight: 500;
+		font-size: rem(16);
+		background-color: $mainColor;
+		color: #fff;
+		box-shadow: none;
+		padding-top: rem(13);
+		@media (max-width: $mobile){
+			color: #fff;
+			background: $mainColor;
+			width: 100%;
+		}
+	}
+	&_l{
+		display: inline-flex;
+		font-weight: 500;
+		width: auto;
+		padding: rem(17) rem(40);
+		@include adaptiveValue("font-size", 16, 14);
+		background-color: inherit;
+		border: 1px solid $mainColor;
+		color: $mainColor;
+		box-shadow: none;
+		padding-top: rem(13);
+		align-items: center;
+		@media (max-width: $mobile){
+			color: #fff;
+			background: $mainColor;
+			width: 100%;
+		}
+	}
+}

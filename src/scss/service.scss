@@ -1,0 +1,9 @@
+.page {
+		// .page__service-main
+		&__service-main {
+			@include adaptiveValue("padding-top", 50, 30);
+			@include adaptiveValue("padding-bottom", 150, 100);
+		}
+}
+.service-main {
+}

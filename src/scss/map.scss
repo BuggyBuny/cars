@@ -1,0 +1,9 @@
+.page {
+	// .page__cart-main
+	&__cart-main {
+		@include adaptiveValue("padding-top", 50, 30);
+		@include adaptiveValue("padding-bottom", 150, 100);
+	}
+}
+.cart-main {
+}
